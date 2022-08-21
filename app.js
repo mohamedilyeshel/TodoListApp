@@ -66,6 +66,7 @@ taskForm.addEventListener("submit", (e) => {
   e.preventDefault();
   let todo = createToDo(taskForm.elements.task.value);
   addToDoStorage(todo);
+  taskForm.elements.task.value = "";
 });
 
 clearAllBtn.addEventListener("click", (e) => {
